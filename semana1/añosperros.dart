@@ -3,7 +3,7 @@ void main(){
   print("Años perros");
   stdout.writeln("Ingresa tu edad ");
   var edad= stdin.readLineSync();
-  double edades= double.parse(edad);
+  int edades= int.parse(edad);
 
   var perruno= (7*edades);
 
