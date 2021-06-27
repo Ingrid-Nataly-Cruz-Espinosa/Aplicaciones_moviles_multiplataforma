@@ -72,7 +72,7 @@ class _OperacionesPageState extends State<OperacionesPage> {
     ),            
           ],
         ),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,  //aqui estan los botones
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat, 
         floatingActionButton: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Row(
@@ -119,7 +119,7 @@ class _OperacionesPageState extends State<OperacionesPage> {
               ),
               FloatingActionButton(
                   heroTag: "btn2",
-                  child: Icon(Icons.format_strikethrough),
+                  child: Text('/'),
                   onPressed: () {
                     setState(() {
                       _numerouno = int.parse(valorController.text);
