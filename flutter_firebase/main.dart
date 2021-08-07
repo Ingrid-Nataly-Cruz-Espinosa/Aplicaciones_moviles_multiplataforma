@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:myagenda/home_pages.dart';
 import 'package:myagenda/login_pages.dart';
 import 'package:myagenda/read_page.dart';
 import 'package:myagenda/write_page.dart';
@@ -9,7 +8,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,14 +16,14 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.orange,
           primaryColor: Colors.white,
           accentColor: Colors.black),
-      initialRoute: 'home',
+      initialRoute: 'login',
       routes: {
-        'home': (BuildContext context) => HomePage(),
         'login': (BuildContext context) => LoginPage(),
         'read': (BuildContext context) => ReadPage(),
         'write': (BuildContext context) => WritePage(),
 
       },
     );
+
   }
-}
+}v
